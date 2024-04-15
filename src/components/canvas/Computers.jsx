@@ -4,7 +4,6 @@ import { Suspense, useEffect, useState } from "react";
 import CanavasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
-  console.log("ismobile", isMobile);
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />
@@ -34,10 +33,8 @@ const CopmputersCanvas = () => {
     const mediaQuery = window.matchMedia("(max-width:500px)");
 
     setIsMobile(mediaQuery.matches);
-    // console.log(mediaQuery.matches);
     const handleMediaQueryChange = (e) => {
       setIsMobile(e.matches);
-      console.log(e.matches, isMobile);
     };
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
