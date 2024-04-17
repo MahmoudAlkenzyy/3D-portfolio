@@ -7,7 +7,7 @@ import { SectionWrappper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[240px] w-full">
+    <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow.card"
@@ -48,7 +48,7 @@ const About = () => {
         real-world problems. Let&apos;s work together to bring your ideas to
         life!
       </motion.p>
-      <div className="mt-2 flex flex-wrap gap-10">
+      <div className="mt-5 flex flex-wrap gap-10  justify-center">
         {services.map((service, idx) => (
           <ServiceCard key={service.title} index={idx} {...service} />
         ))}

@@ -16,9 +16,9 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
-  shopify,
+  TheWildOasis,
+  Exclusive,
+  carHup,
   carrent,
   jobit,
   tripguide,
@@ -42,20 +42,16 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "UI Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React  Developer",
     icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -116,57 +112,65 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "The Ultimate React Course",
+    company_name: "Jonas Schmedtmann (Udemy)",
+    // icon: TheWildOasis,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Dec 2023 - Mar 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "React",
+      "Redux Toolkit",
+      "React Query",
+      "Tailwind",
+      "Context API",
     ],
   },
+  // points: [
+  //     "Authentication and Authorization handle it in parallel with backend using supabase",
+  //     `Dashboard to visualize all daily hotel sales, showing both "total" sales and "extras" sales in a visually appealing way`,
+  //     `backend powered by Supabase to handle project data for guests, cabins, users, and bookings`,
+  //     `Validation usaing React Hook Form to handle form validation, error handling, and form submission`,
+  //   ],
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Front end development diplome ",
+    company_name: "Route",
+    // icon: Exclusive,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "Sep 2023 - Feb 2024",
+    points: [" Next JS", "React", "SCSS", "TS", "JQuary", "Bootsrap"],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // points: [
+  //   "Developing and maintaining web applications using React.js and other related technologies.",
+  //   "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //   "Implementing responsive design and ensuring cross-browser compatibility.",
+  //   "Participating in code reviews and providing constructive feedback to other developers.",
+  // ],
+  // {
+  //   title: "Next",
+  //   company_name: "Car Hub",
+  //   icon: carHup,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Pagination: navigation through a large dataset of cars, to explore multiple pages",
+  //     "Exploration and Filtering: Explore a wide variety of cars from around the world,utilizing a search and filter system based on criteria such as model,manufacturer, year, fuel type,",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "TypeScript Types: Utilize TypeScript to provide robust typing for enhanced code quality and better development.",
+  //   ],
+  // },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: meta,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 ];
 
 const testimonials = [

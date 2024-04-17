@@ -1,4 +1,4 @@
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
 import CanavasLoader from "../Loader";
@@ -60,6 +60,7 @@ const CopmputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
+      <Preload all />
     </Canvas>
   );
 };
