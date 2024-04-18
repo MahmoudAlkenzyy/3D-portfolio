@@ -8,8 +8,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -19,16 +17,12 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import carHup from "./company/carHup.svg";
-import TheWildOasis from "./company/The-wild-oasis.png";
-import Exclusive from "./company/Exclusive.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ecommerce from "./Ecommerce.png";
+import waildOasis from "./waild-oasis.png";
+import vercel from "./vercel.png";
 
 export {
   logo,
@@ -40,8 +34,7 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
+  ecommerce,
   git,
   html,
   javascript,
@@ -51,12 +44,8 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  carHup,
   carrent,
-  TheWildOasis,
-  Exclusive,
   jobit,
-  tripguide,
+  waildOasis,
+  vercel,
 };

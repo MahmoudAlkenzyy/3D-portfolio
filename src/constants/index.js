@@ -13,16 +13,10 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  TheWildOasis,
-  Exclusive,
-  carHup,
+  ecommerce,
   carrent,
   jobit,
-  tripguide,
-  threejs,
+  waildOasis,
 } from "../assets";
 
 export const navLinks = [
@@ -92,22 +86,22 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
@@ -202,16 +196,63 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "The-wild-oasis",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This is an internal application that the hotel use it to manage hotel operations, including sales statistics, cabin management, user management, booking management, and various customization options. It integrates authentication, database",
+
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Styled Comp...",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: waildOasis,
+    source_code_link: "https://github.com/MahmoudAlkenzyy/the-wild-oasis",
+    deploy_url:
+      "https://the-wild-oasis-9rf8-git-main-mahmoudalkenzyys-projects.vercel.app/#/Cabins",
+  },
+  {
+    name: "E-commerce",
+    description:
+      "This project provides to user different Realtime Search, product description viewing , adding and removing products from your cart , adding and removing from your Wishlist , and secure online payment transactions through an integrated payment gateway.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: " React-query",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://github.com/MahmoudAlkenzyy/E-commerce",
+    deploy_url:
+      "https://e-commerce-git-main-mahmoudalkenzyys-projects.vercel.app/",
+  },
+  {
+    name: "Car-Hub",
+    description:
+      "A virtual car showroom designed to provide a smooth experience for exploring car information and images pulled from various APIs. It's a user-friendly web application built using React, Next.js 13, TypeScript, and Tailwind CSS",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
@@ -220,49 +261,9 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MahmoudAlkenzyy/Car-Hub",
+    deploy_url:
+      "https://car-hub-git-master-mahmoudalkenzyys-projects.vercel.app/",
   },
 ];
 
