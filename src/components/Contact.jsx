@@ -5,7 +5,9 @@ import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrappper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
+//template_uhwd199
+//service_pg6wmjc
+//L0dA03oBztBV32BoS
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -15,8 +17,40 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailJs
+      .send(
+        "service_pg6wmjc",
+        "template_uhwd199",
+        {
+          from_name: form.name,
+          to_name: "mahmoud alkenzy",
+          frome_email: form.email,
+          to_email: "mahmoudalkenzy2@gmail.com",
+          message: form.message,
+        },
+        { publicKey: "L0dA03oBztBV32BoS" }
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+          setForm({ name: "", email: "", message: "" });
+        },
+        (err) => {
+          setLoading(false);
+          console.log(err);
+          alert("somthing went wrong");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -69,7 +103,7 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl "
           >
-            {loading ? "Sendding..." : "send"}
+            {loading ? "Sending..." : "send"}
           </button>
         </form>
       </motion.div>
