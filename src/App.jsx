@@ -13,6 +13,7 @@ import {
   Tech,
   Works,
 } from "./components";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -32,6 +33,26 @@ function App() {
           <StarsCanvas />
         </div>
       </div>
+      <Toaster
+        position="top-center"
+        gutter={12}
+        containerStyle={{ margin: "80px" }}
+        toastOptions={{
+          success: {
+            duration: 5000,
+          },
+          error: {
+            duration: 6000,
+          },
+          style: {
+            background: "#151030",
+            color: "white",
+            fontSize: "18px",
+            padding: "20px 26px",
+            maxWidth: "500px",
+          },
+        }}
+      />
     </BrowserRouter>
   );
 }
