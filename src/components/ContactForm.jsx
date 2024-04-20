@@ -78,6 +78,7 @@ const ContactForm = () => {
           type="text"
           name="message"
           value={values.message}
+          onBlur={handleBlur}
           onChange={handleChange}
           placeholder="what do you want to say?"
           className="bg-tertiary py-4 px-6 placeholder:text-white rounded-lg outline-none border-none font-medium"
